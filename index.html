@@ -3,7 +3,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no">
   <head>
-
     <title>HTML på en ryddig måte - forståelse og bruk</title>
     <style type="text/css">
        body {
@@ -40,14 +39,14 @@
          text-align: left;
        }
        div.eksempel {
+         background-color: #dea; /* lysegrønn */
+         color: black;
          margin-left: 10%; /* sentrert */
          margin-right: 10%;
          padding: 0.5em;      /* bittelitt indre marg */
          border-width: thin;
          border-color: black;
          border-style: solid;
-         background-color: #dea; /* lysegrønn */
-         color: black;
        }
        div.eksempel p.info {
          font-family: helvetica, arial, sans-serif;
@@ -72,7 +71,10 @@
          border-style: none; /* netscape-hack */
          text-align: left;
        }
-
+       code {
+         /* background-color: #ffffe8; ** Stygt !! ** */
+         color: black;
+       }
        address {
          font-family: arial, helvetica, sans-serif;
          margin-top: 1em;
@@ -431,15 +433,13 @@
           <p class="info">Eksempel:</p>
           <pre>
 &lt;p align="right"&gt;
-    Dette er et eksempelavsnitt. Inni et eksempelavsnitt
-    skriver man eksempelsetninger.
+    Dette er et eksempelavsnitt. 
 &lt;/p&gt;
           </pre>
           <p class="info">Avsnittet kan bli fremstilt slik i en visuell nettleser:</p>
           <div class="fremstilling">
             <p align="right">
-              Dette er et eksempelavsnitt. Inni et eksempelavsnitt
-              skriver man eksempelsetninger.
+              Dette er et eksempelavsnitt. 
             </p>
           </div>
         </div>
@@ -473,12 +473,13 @@
           </p>
           <div class="fremstilling">
             <p>
-              Dette er min beste venn: <img src="tux.png" alt="Tux leser avisen"/> Er han ikke søt?
+              Dette er min beste venn: <img src="tux.png"
+                alt="Tux leser avisen" /> Er han ikke søt?
             </p>
           </div>
         </div>
         <p>
-          <img src="tux.png" alt="Tux leser avisen" id="tux"/>
+          <img src="tux.png" alt="Tux leser avisen" id="tux" />
           Eksempelet demonstrerer hvordan <code>img</code>-elementet enkelt flyter
           på linjen sammen med teksten. Dog blir det ikke særlig lekkert, den ene
           tekstlinjen blir tvunget til å være like høy som bildet. Vi skal vise at
@@ -507,7 +508,8 @@
           relativ eller absolutt. Hvis bildet lå i katalogen ovenfor
           katalogen HTML-dokumentet lå i kunne adressen blitt beskrevet
           som <code>src="../bilde.jpeg"</code>.
-
+        </p>
+        <p>
           <code>alt</code> (engelsk <em>alternate text</em>) gir en
           tekst som representeres istedet for bildet i de tilfeller
           hvor nettleseren ikke har mulighet til å vise bilder, for
@@ -528,7 +530,7 @@
           at det blir tolket feil? Vel, nettopp for slike situasjoner har
           man noe fint noe som heter <em>entiteter</em>. Entitet betyr egentlig
           bare «noe som finnes». Entiteter begynner med tegnet <code>&amp;</code>
-          og slutter med tegnet <code>;</code> For å skrive <code>&lt;</code> og
+          og slutter med tegnet <code>;</code>. For å skrive <code>&lt;</code> og
           <code>&gt;</code> kan man skrive <code>&amp;lt;</code> og
           <code>&amp;gt</code>, som står for henholdsvis <em>less than</em> og
           <em>greater than</em>. Nå introduserte vi også et nytt problem,
@@ -552,7 +554,8 @@
           </p>
           <pre>
 &lt;p&gt;
-    For &amp;aring; angi uthevet skrift brukes starttaggen &amp;lt;em&amp;gt; og sluttagen &amp;lt;/em&amp;gt;
+    For &amp;aring; angi uthevet skrift brukes starttaggen 
+    &amp;lt;em&amp;gt; og sluttagen &amp;lt;/em&amp;gt;
 &lt;/p&gt;
           </pre>
          <p class="info">
@@ -1824,11 +1827,3 @@ html
     <address><a href="mailto:kurs@nvg.org">kurs@nvg.org</a></address>
   </body>
 </html>
-<!--
-     FILE ARCHIVED ON 12:04:05 Sep 02, 2000 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 14:22:32 Oct 18, 2019.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->
