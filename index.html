@@ -1,10 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="no" lang="no">
+<html lang="no">
   <head>
     <title>HTML på en ryddig måte - forståelse og bruk</title>
-    <style type="text/css">
+    <style>
        body {
          background-color: white;
          color: black;
@@ -16,7 +15,7 @@
        }
        h1 {
          color: #a75;
-         border-width: none none thin none; /* netscape hack */
+         border-width: 0 0 thin 0; /* netscape hack */
          border-color: black;
          border-style: none none solid none;
        }
@@ -78,7 +77,7 @@
        address {
          font-family: arial, helvetica, sans-serif;
          margin-top: 1em;
-         border-width: thin none none none; /* netscape-hack */
+         border-width: thin 0 0 0; /* netscape-hack */
          border-color: black;
          border-style: solid none none none;
        }
@@ -238,7 +237,7 @@
       }
       table {
           background: #ffd;
-          color: black
+          color: black;
           border-width: thin;
           border-color: black;
           border-style: solid;
@@ -426,7 +425,7 @@
            Du kan også bruke enkle apostrofer <code>'</code> istedet, for eksempel
            hvis det er ønskelig å bruke tegnet <code>"</code> inni verdien. Hvis du
            skal angi flere attributter skiller du dem med mellomrom
-           eller linjeskift, for eksempel <code>&lt;p align="right" id="blapp"&gt;</code>
+           eller linjeskift, for eksempel <code>&lt;p style="text-align: right"id="blapp"&gt;</code>
            Følgende eksempel vil indikere at avsnittet skal høyrestilles.
         </p>
         <div class="eksempel">
@@ -438,7 +437,7 @@
           </pre>
           <p class="info">Avsnittet kan bli fremstilt slik i en visuell nettleser:</p>
           <div class="fremstilling">
-            <p align="right">
+            <p style="text-align: right">
               Dette er et eksempelavsnitt. 
             </p>
           </div>
